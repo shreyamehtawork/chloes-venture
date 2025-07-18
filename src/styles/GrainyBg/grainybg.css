@@ -1,0 +1,35 @@
+.grainy-bg {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+
+  /* base gradient with the three shades */
+  background: radial-gradient(circle at top left, #6B0E18 0%, #C4A68B 40%, #F5EFE0 100%);
+}
+
+.grainy-bg::after {
+  content: "";
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  
+  /* grain texture overlay */
+  background: url('data:image/svg+xml;utf8,\
+  <svg xmlns="http://www.w3.org/2000/svg" width="800" height="800">\
+  <filter id="noise"><feTurbulence type="fractalNoise" baseFrequency="0.8" numOctaves="4" stitchTiles="stitch"/>\
+  <feColorMatrix type="saturate" values="0"/><feComponentTransfer>\
+  <feFuncA type="table" tableValues="0 0.1"/>\</feComponentTransfer></filter>\
+  <rect width="100%" height="100%" filter="url(#noise)" /></svg>')
+    center/cover;
+  opacity: 0.05; /* tweak for stronger/weaker noise */
+  pointer-events: none;
+  z-index: 1;
+}
+
+.grainy-bg > * {
+  position: relative;
+  z-index: 2;
+  color: #fff;
+  text-shadow: 0 1px 3px rgba(0,0,0,0.5);
+}

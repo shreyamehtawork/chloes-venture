@@ -1,0 +1,34 @@
+.featured-section {
+  background-color: #6b0e18;
+  color: #fff;
+  padding: 60px 20px;
+}
+
+.featured-grid {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+  margin-top: 40px;
+}
+
+.collection-card {
+  background-color: #c4a68b;
+  padding: 20px;
+  border-radius: 10px;
+  width: 200px;
+  text-align: center;
+  color: #fff;
+  transition: transform 0.3s;
+}
+
+.collection-card:hover {
+  transform: scale(1.05);
+}
+
+.placeholder-img {
+  height: 150px;
+  background-color: #fff;
+  margin-bottom: 10px;
+  border-radius: 8px;
+}

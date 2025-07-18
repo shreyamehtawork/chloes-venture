@@ -1,0 +1,23 @@
+.about-container {
+  padding-top: 80px;
+  max-width: 800px;
+}
+
+.bg-overlay {
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  backdrop-filter: blur(3px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.about-list {
+  list-style-type: none;
+  padding-left: 0;
+  text-align: left;
+}
+
+.about-list li::before {
+  content: "✦";
+  color: #c4a68b;
+  padding-right: 10px;
+}
