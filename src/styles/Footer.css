@@ -1,0 +1,31 @@
+.custom-footer {
+  background-color: #1c1c1cf5;
+  font-family: "Erva";
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.footer-logo {
+  max-width: 140px;
+  opacity: 0.9;
+}
+
+.footer-nav a {
+  color: #e0ddd5;
+  text-decoration: none;
+  font-size: 1rem;
+  transition: color 0.3s ease;
+}
+
+.footer-nav a:hover {
+  color: #c4a68b; /* Tan accent on hover */
+}
+
+.social-icons a {
+  color: #e0ddd5;
+  font-size: 1.2rem;
+  transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+  color: #c4a68b;
+}

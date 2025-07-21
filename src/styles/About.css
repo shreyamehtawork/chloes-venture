@@ -1,0 +1,129 @@
+:root {
+  --olive: #4b4a36;
+  --cream: #f7f2eb;
+  --brown: #7c6e59;
+  --light-text: #fdfaf7;
+  --gray: #f3f1ed;
+}
+
+.about-page {
+  background-color: var(--cream);
+  font-family: "Playfair Display", serif;
+  color: var(--brown);
+  line-height: 1.7;
+}
+
+/* Hero Section */
+.hero-section {
+  background-color: var(--olive);
+  color: var(--light-text);
+  padding: 5rem 0;
+}
+
+.hero-section h1 {
+  font-family: "Erva";
+  letter-spacing: 1px;
+}
+
+.hero-section p {
+  font-family: "Rossie";
+  font-size: 1.3rem;
+  opacity: 0.9;
+}
+
+.about-chloe-section {
+  background-color: var(--cream);
+  padding: 6rem 0 4rem 0;
+  text-align: center;
+  border-bottom: 1px solid #4b4a36;
+}
+
+.section-title {
+  font-family: "Erva";
+  font-size: 2rem;
+}
+
+.chloe-description {
+  max-width: 750px;
+  margin: 0 auto;
+  font-size: 1.05rem;
+  line-height: 1.9;
+}
+
+.chloe-description em {
+  font-style: italic;
+  opacity: 0.85;
+}
+
+.chloe-meaning p {
+  font-family: "Open Sans", sans-serif;
+  font-size: 2rem;
+  margin-bottom: 0.8rem;
+}
+
+.letter {
+  color: var(--olive);
+  font-size: 1.4rem;
+  font-weight: bold;
+  color: var(--olive);
+  margin-right: 6px;
+}
+
+.title-desc {
+  font-family: "Kugile";
+  font-weight: 900;
+}
+
+.logo-mark {
+  position: relative;
+}
+
+.logo-faded {
+  width: 260px;
+  opacity: 0.07;
+  filter: grayscale(100%);
+}
+
+.values-section {
+  background-color: var(--cream);
+  padding: 6rem 0;
+}
+
+.values-section h2 {
+  font-size: 2.2rem;
+  font-family: "Erva";
+  font-weight: bold;
+}
+
+.values-section h4 {
+  font-size: 1.3rem;
+  margin-bottom: 0.5rem;
+  font-family: "Erva";
+  font-weight: 600;
+}
+
+.values-section p {
+  font-family: "Open Sans", sans-serif;
+  font-size: 0.95rem;
+  opacity: 0.85;
+  max-width: 300px;
+  margin: 0 auto;
+}
+.logo-centered {
+  width: 80px;
+  height: auto;
+  opacity: 0.9;
+  filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.1));
+  transition: transform 0.3s ease;
+}
+
+.logo-centered:hover {
+  transform: scale(1.05);
+}
+
+.letter {
+  font-family: "Playfair Display", serif;
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-right: 6px;
+}
