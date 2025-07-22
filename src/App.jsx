@@ -8,6 +8,7 @@ import Products from "./pages/Products";
 import SingleProductsView from "./pages/SingleProductView";
 import About from "./pages/About";
 import Footer from "./components/Footer";
+import Fashion from "./pages/Fashion";
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
           path="/products/singleproductspage"
           element={<SingleProductsView />}
         />
+        <Route exact path="/fashion" element={<Fashion />} />
       </Routes>
       <Footer />
     </div>

@@ -14,18 +14,18 @@
 }
 
 /* Hero Section */
-.hero-section {
+.hero-section-about {
   background-color: var(--olive);
   color: var(--light-text);
   padding: 5rem 0;
 }
 
-.hero-section h1 {
+.hero-section-about h1 {
   font-family: "Erva";
   letter-spacing: 1px;
 }
 
-.hero-section p {
+.hero-section-about p {
   font-family: "Rossie";
   font-size: 1.3rem;
   opacity: 0.9;

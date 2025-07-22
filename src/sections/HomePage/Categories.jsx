@@ -3,6 +3,7 @@ import "../../styles/Categories.css";
 import decor from "../../assets/flower.webp";
 import pet from "../../assets/pet.png";
 import icon from "../../assets/knitting.png";
+import { Link } from "react-router-dom";
 
 const categories = [
   { title: "FASHION", img: decor },
@@ -22,11 +23,18 @@ export default function Categories() {
           {categories.map((cat, index) => (
             <div className="col-6 col-md-3 mb-4" key={index}>
               <div className="category-card mx-auto">
-                <img src={cat.img} alt={cat.title} className="category-img" />
-                <div className="mx-auto mt-3">
-                  <img src={icon} width="30" height="30"></img>
-                </div>
-                <h3 className="mt-3">{cat.title}</h3>
+                <Link
+                  to={`/${cat.title}`}
+                  key={cat.title}
+                  className="category-link"
+                >
+                  <img src={cat.img} alt={cat.title} className="category-img" />
+                  <div className="mx-auto mt-3">
+                    <img src={icon} width="30" height="30"></img>
+                  </div>
+
+                  <h3 className="mt-3">{cat.title}</h3>
+                </Link>
               </div>
             </div>
           ))}

@@ -11,7 +11,10 @@
   flex-direction: column;
   align-items: center;
 }
-
+.category-link {
+  text-decoration: none;
+  color: whitesmoke;
+}
 h1 {
   font-family: "Rossie";
 }

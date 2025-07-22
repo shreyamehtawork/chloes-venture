@@ -6,7 +6,7 @@ function About() {
   return (
     <div className="about-page">
       {/* Hero Section */}
-      <section className="hero-section text-center">
+      <section className="hero-section-about text-center">
         <div className="container">
           <h1 className="display-4 fw-bold">ABOUT US</h1>
           <p className="lead mt-3">THE VISION BEHIND THE CHLOE'S</p>
