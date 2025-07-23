@@ -1,0 +1,104 @@
+.fashion-page {
+  font-family: "Playfair Display", serif;
+  background-color: #f8f5f0;
+}
+
+/* Hero */
+.hero-section-beauty {
+  background: url("../assets/beauty.png") center/cover no-repeat;
+  height: 50vh;
+  position: relative;
+}
+
+.hero-section-beauty .overlay {
+  background-color: rgba(34, 34, 34, 0.5);
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.hero-content {
+  z-index: 2;
+  position: relative;
+}
+
+.sub-label-names {
+  font-size: 1.1rem;
+  color: #e0dfdb;
+  letter-spacing: 1px;
+}
+
+/* Sidebar */
+.sidebar {
+  height: 100%;
+  margin: 0;
+
+  border: 3px solid #a89e8a;
+  background-color: #fdfdfc;
+}
+
+/* Products */
+.product-card img {
+  height: 400px;
+  object-fit: cover;
+  border-radius: 4px;
+}
+.product-card {
+  background-color: #f5f0ea;
+  border-radius: 200px 200px 0px 0px; /* Half-moon shape */
+  padding: 10px 15px 20px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+  text-align: center;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+.product-card .card-title {
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+/* Footer */
+.footer-banner {
+  background: url("https://images.unsplash.com/photo-1521389508051-d7ffb5dc8b18?auto=format&fit=crop&w=1600&q=80")
+    center/cover no-repeat;
+  position: relative;
+}
+
+.footer-banner .overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(34, 34, 34, 0.5);
+  z-index: 1;
+}
+
+.footer-banner h2 {
+  font-size: 40px;
+  font-family: "Kugile";
+}
+.footer-banner h2,
+.footer-banner p {
+  position: relative;
+  z-index: 2;
+}
+
+/* Responsive */
+@media (max-width: 767px) {
+  .hero-section {
+    height: 35vh;
+  }
+
+  .product-card img {
+    height: 300px;
+  }
+}
